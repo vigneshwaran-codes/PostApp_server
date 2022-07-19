@@ -4,11 +4,15 @@ const postRoute = require('./routes/posts')
 const userRoute = require('./routes/users')
 // Mongo
 const mongo = require('./shared/helper')
+const cors = require('cors')
 
 dotenv.config()
 
 const app = express()
 const PORT = process.env.PORT
+
+// Enabled CORS
+app.use(cors())
 
 // Req -> Parse body
 app.use(express.json())
