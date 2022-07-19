@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 const postRoute = require('./routes/posts')
 const userRoute = require('./routes/users')
 // Mongo
-const mongo = require('./helper')
+const mongo = require('./shared/helper')
 
 dotenv.config()
 
